@@ -1,0 +1,120 @@
+Function Decorator:-
+------------------
+
+Decorater is a function which can take a function as argument and extend its functionality and return modified function with extend functionality.
+
+
+
+  input function               new(add some functionality)
+-----------------> Decorate -------------------------------->
+	wish()                     decore/ineer() 
+
+
+The main advtange of decorator is we can extend the functionality of exitsing function without modify that function
+
+
+def moudification_cal(cal):
+    def inner(a,b):
+        mul = a*b
+        div = a/b
+        cal(a, b)
+        print('decore ka mul:-',mul,'decore ka div:-',div)
+    return inner
+
+@moudification_cal
+def cal(a,b):
+    sum = a+b
+    sub = a-b
+    print('main func ka sum:-',sum,'main func ka sub:-',sub)
+
+cal(10,20)
+
+op:- 
+main func ka sum:- 30 main func ka sub:- -10
+decore ka mul:- 200 decore ka div:- 0.5
+
+def decor(wish):
+    def inner(name):
+        if name == "Amiya":
+            print("Please donot come here")
+        else:
+            wish(name)
+    return inner
+
+@decor
+def wish(name):
+    print("Hello",name,"Good morning")
+
+wish('Prasana')
+wish('Amiya')
+
+
+Homework:-
+
+1.Try decorator from your side.
+2.Try decorator chaining once.
+
+
+
+#Decorators Functio
+# def rajesh(func):
+#     def mul(a,b):
+#         mul = a*b
+#         print(mul)
+#         func(a,b)
+#     return mul
+#
+#
+# @rajesh
+# def cal(a,b):
+#     add = a+b
+#     print(add)
+#
+# cal(10,20)
+#
+# @rajesh
+# def create(num,num2):
+#     floor = num//num2
+#     print(floor)
+#
+# create(20,5)
+
+
+
+
+# def decore(even_odd):
+#     def pallindrom(a):
+#         str_num = str(a)
+#         str_num_reverse = str_num[::-1]
+#         if str_num == str_num_reverse:
+#             print('Pallindrom')
+#         else:
+#             print('Not Pallindrom')
+#         even_odd(a)
+#
+#     return pallindrom
+#
+# @decore
+# def even_odd(a):
+#     if a%2==0:
+#         print("Even")
+#     else:
+#         print("Else")
+#
+# even_odd(122)
+
+
+
+practices
+
+li = ['Rajesh','Rabi','Sanjay','Krupa','Rohit']
+
+li_1 = [i for i in li if i[0]=='R']
+print(li_1,'list com')
+
+for i in li:
+    if i[0]=='R':
+        print(i,'normal')
+
+a =list(filter(lambda i:i[0]=='R',li))
+print(a,'filter with lambda')

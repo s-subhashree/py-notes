@@ -1,0 +1,112 @@
+#Data Type methods are update or manipulate the data.
+
+s = 'treenetra education'
+# print(type(s))
+# print(dir(s))
+
+#How can we use data types methods in python
+'''using the dot(.) format''' # str/var.func_name
+
+#count endswith find index format join lower split startswith strip swapcase upper replace
+
+#1. Capitalize:- Convert string lower first char to uppaer
+
+print(s.capitalize())
+
+#2.upper():-If in your string any char is in lower, it's ,convert to upper.
+
+s = 'treenetra EDUcarion'
+print(s.upper())
+
+# 3.lower():-If in your string any char is in upper, it's ,convert to lower.
+
+s = 'TREEnetra EDucation'
+print(s.lower())
+
+# 4.startswith:-Return True if the string start with spcified value.
+
+s = 'Treenetra Education'
+print(s.startswith('T'))
+print(s.startswith('S'))
+print(s.startswith('t'))
+
+#endswith:-Return True if the string END with spcified value.
+
+s = 'Treenetra Education'
+print(s.endswith('n'))
+print(s.endswith('N'))
+
+#count:-
+
+s = 'Treenetra Education'
+print(len(s))  # count how many char are present in a string
+
+print(s.count('a'))
+print(s.count('e'))
+
+#index:-
+
+s = 'Treenetra Education'
+print(s.index('r'))
+print(s.index('E'))
+print(s.index('a'))
+print(s.index('ati'))
+# print(s.index('z'))
+
+#when we serach a sub-string if the sub-string is not present main string it's showing error
+
+
+#find:-
+
+s = 'Treenetra Education'
+print(s.find('r'))
+print(s.find('E'))
+print(s.find('a'))
+print(s.find('ati'))
+print(s.find('z'))
+
+#when we serach a sub-string if the sub-string is not present main string it's showing -1
+
+
+
+6.index():- It's search the position of sub string in a string. If any sub string is not there it's return the Error.
+
+>>> S.index('Z')
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    S.index('Z')
+ValueError: substring not found
+
+7.find():- It's search the position of sub string in a string. If any sub string is not there it's return the -1.
+>>> S.find('Z')
+-1
+-----------------  find and index
+
+>>> s = 'Bhubaneswar'
+>>> s.find('u')
+2
+>>> s.find('r')
+10
+>>> s.find('a')
+4
+>>> s.find('ar')
+9
+>>> S ='Ab aB Ac Ad Dc Ac Dk'
+>>> s.find('A')
+-1
+>>> S.find('A')
+0
+>>> S.find('Ac')
+6
+>>> S.find('Ac D')
+15
+>>> S.find('Z')
+-1
+>>> 
+>>> 
+>>> S.index('A')
+0
+>>> S.index('Ac D')
+15
+>>> s.index('r')
+10

@@ -1,0 +1,113 @@
+Slicing Of a String:-
+-------------------
+When we slicce a sub string into a string this time we call string slicing.
+
+Rule:-
+----
+Python is a zero base index system
+Left to Right positive index:- starts from 0
+Right to Left Negetive index :- starts from -1
+
+Square bracket([]) use for opeartor of slicing.
+
+
++VE :- LEFT TO RIGHT
+
+
+-VE :- RIGHT TO LEFT
+
+
+Syntax:-
+
+Variable[start:end+1:steps] 
+
+
+
+
+
+                -9     -8       -7         -6     -5        -4      -3        -2       -1     
+				T      R         E          E      N        E        T        R        A
+                0      1         2          3      4        5        6        7        8
+
+
+
+
+
+
+Example:-
+
+
+>>> s = 'TREENETRA'
+>>> #want TREE
+>>> s[0:4]
+'TREE'
+>>> 
+>>> #want NETRA
+>>> s[4:]
+'NETRA'
+
+Note:- Step 1 is default, if step is one no need to mention it.
+
+
+Negetive Index::-
+---------------
+
+>>> # wants NETRA AS -VE
+>>> s[-5:]
+'NETRA'
+>>> 
+>>> 
+>>> # wants REENE AS -VE
+>>> s[-8:-3]
+'REENE'
+
+
+Real Time Example:-
+------------------
+
+Use Area:-
+
+1.Create Adhar Password
+2.Create Flight PNR
+3.Create Bank IFSC Code
+
+Name= 'Chandra Sekhar'
+>>> DOB = '17/03/1997'
+>>> 
+>>> password = Name[0:4] + DOB[-4:]
+>>> password
+'Chan1997'
+>>> 
+>>> 
+>>> Bank = 'State Bank Of INDIA'
+>>> branch_code = '10927'
+>>> 
+>>> ifsc = Bank[0]+Bank[6]+Bank[11]+Bank[14:16]+branch_code
+>>> ifsc
+'SBOIN10927'
+>>> ifsc = Bank[0]+Bank[6]+Bank[14:16]+branch_code
+>>> ifsc
+'SBIN10927'
+
+
+Home Work:-
+----------
+
+
+Question:-1
+------------
+name = 'Ratna Subudhi'
+>>> mob = '75042337889'
+>>> dob = '23/8/1991'
+>>> #create password start with dob_year then first_name 1st 2 char and last_name 1st 2char then mobile number 3rd to 7th char
+>>> 
+>>> Output :- 1991RaSU04233
+>>> 
+>>> 
+
+
+Question:-2
+------------
+>>> bank_name = 'KOTAK MAHINDRA BANK'
+>>> branch = '78967'
+>>> Output :- KKBK78967

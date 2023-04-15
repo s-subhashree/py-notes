@@ -1,0 +1,83 @@
+Boolean:-(bool)
+-------
+Boolean values contains two keyword True and False.
+
+Use Area:-
+
+1. When we compare two things in python , python return boolean values(True and False)
+
+2.Anything is exit in container is return True, if it's empty return False
+
+3.If a element present in a container it's True neither False.
+
+>>> li = [89,67,23]
+>>> 67 in li
+True
+>>> 789 in li
+False
+>>> 
+
+
+
+
+Python Taking True as 1 and False as 0.
+
+>>> 
+>>> True+True
+2
+>>> True+False
+1
+>>> False+False
+0
+>>> 
+
+
+String:- (str)
+-------------
+
+A String is a sequence of charcters ennclosed within single quote and double quote.
+
+>>> a = 'DFSFGDGHVJHfjhfjksdhvjkhdfjkvhdfj 233445 #$%$%^&^%&*^&*>:"{":">:"'
+>>> type(a)
+<class 'str'>
+>>> b = "DFSFGDGHVJHfjhfjksdhvjkhdfjkvhdfj 233445 #$%$%^&^%&*^&*>::>"
+>>> type(b)
+<class 'str'>
+>>> c = ''
+>>> d = "" 
+>>> type(c)
+<class 'str'>
+>>> type(d)
+<class 'str'>
+
+Triple Quote
+------------
+1. 
+
+Doc string:- Document of string
+
+we are usinh doc string in a class or function for provding the basic information about this.
+
+func_name:-
+	''' This function is used for banking payment getway '''
+
+
+2.
+
+Multiline Comment :- we are using Triple quote for multiline comment
+
+Ex:-
+'''for country in countries:
+    if country.text == "India":
+        country.click()
+        break
+
+time.sleep(10)'''
+
+
+
+single line comment :- In  python we are using # symbol for single line comment
+
+>>> # Data = 90
+
+

@@ -1,0 +1,45 @@
+List:-
+If we want to represent a group of data in a single enity, where insertion order is preserved(Indexing) and Duplicated Values als0 allowed then we should go for list data. Always list datatype enclode in squre([]) bracket.
+
+1.Insertion Order is Preseved
+2.Hetrogenious objects are allowed
+3.Duplicates are allowed
+4.It's a mutable data type.(Growable in nature)
+5.Elements are enclode in [] squre bracket.
+6.Every elemnet separate with anothere element with the help of comma(,).
+
+Ex:-
+>>> l = [15,78,89.98,7+9j,True,'Ghhj',[78,90],15,15,15]
+>>> type(l)
+<class 'list'>
+>>> l.append(56765786)
+>>> l
+[15, 78, 89.98, (7+9j), True, 'Ghhj', [78, 90], 15, 15, 15, 56765786]
+>>> 
+
+>>> li = [10,20,30,40]
+>>> type(li)
+<class 'list'>
+>>> dir(li)
+['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+
+>>> # append:- It's add the element in the last position of list. and it's add only one element.
+>>> 
+>>> li = [10,20,30,40]
+>>> li.append(50)
+>>> li
+[10, 20, 30, 40, 50]
+>>> 
+>>> #insert :- Insert the element of specified of postion of the list.
+>>> li = [10,20,30,40]
+>>> li.insert(2,25)
+>>> li
+[10, 20, 25, 30, 40]
+
+>>> #clear :- clear all the element
+>>> li = [56,89,76]
+>>> li.clear()
+>>> li
+[]
+>>> 

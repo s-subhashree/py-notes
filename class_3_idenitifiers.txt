@@ -1,0 +1,109 @@
+Identifiers:-
+-----------
+
+A name in python program is called idenitifier.
+It can be Variable Name, Function Name(File), Module Name and Class Name(Folder).
+
+
+what is variable?
+Variable is hold/store our single data.
+
+Example :-
+
+name = 'Somnath'
+a = 10
+dict = 'Khordha'
+
+
+Rules to define identifiers in python:-
+--------------------------------------
+
+1.The only allowed vharcters in python are:-
+	
+	> Alphabet symbols(upper and lower case)
+	> Digit (0-9)
+	> Underscore symbol(_)
+
+
+2. Identifiers should not start with digits.
+
+3.Idenitifiers are case sensitive, Because python language is case sensitive.
+
+>>> result = 90
+>>> Result
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    Result
+NameError: name 'Result' is not defined
+>>> result
+90
+>>> RESULT  = 123
+>>> RESULt
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    RESULt
+NameError: name 'RESULt' is not defined
+
+
+Industry Rules:-
+---------------
+
+Casing
+
+In python there are 2 types of casing is possiable.
+---------------------------------------------------------
+
+1.Camel Casing:-
+----------------
+
+Allowed Char:- Upper case, Lower Case and Digit
+
+Every word first char should be in uppre and rest are lower.
+
+Use Area:- Module and Class Name and Folder Name
+
+Ex:-     state bank of india
+
+Camel:-
+StateBankOfIndia
+
+Ex_2 :- state bank of india 100927
+
+ex:- StateBankOfIndia100927
+------------------------------------------------------------------
+
+2.Snake Casing:-
+------------------
+
+Allowed Char :- lower case, under score and digit
+
+Every thing is in lower and we will seprate the word help of underscore.
+
+Use Area:- Module and variable Name and function Name
+
+Ex:-     state bank of india
+
+state_bank_of_india
+
+Ex_2 :- state bank of india 100927
+
+ex:- state_bank_of_india_100927
+
+
+
+What is PEP8?
+	Python Enhancement Proposal -8
+
+way of python writing style is know as PEP8.
+
+
+
+When we will underscore as a first char?
+
+name = 'Somnath' ---- normal variable
+
+_name = 'Somnath' ----- procted variable
+
+__name = 'Somnath' -----private variable
+
+

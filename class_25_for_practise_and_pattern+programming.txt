@@ -1,0 +1,81 @@
+# for i in range(67,76,2):
+#     print(i)
+
+# li = [67,89,90,56,89]
+#
+# for i in li:
+#     print(i)
+
+
+# Check in a list how many numbers are even and create a even list
+
+# li = [78,90,87,21,23,43,22,44,64,96]
+# even_li = []
+#
+# for i in li:
+#     if i%2==0:
+#         even_li.append(i)
+#
+# print(even_li)
+# print(len(even_li))
+#
+#
+# #check in a list how many string element is their and create a new string of list.
+#
+# li = [89,'Cuttack','567',8+9j,'Banglore','Maharshi',True,[67,90]]
+# str_li = []
+#
+# for i in li:
+#     if type(i)==str:
+#         str_li.append(i)
+# print(str_li)
+
+'''Patter programming'''
+
+# *
+# *
+# *
+# *
+# *
+
+num = int(input('Enter a your number:-'))
+
+for i in range(1,num+1):
+    print('*')
+
+#******
+num = int(input('Enter a your number:-'))
+
+for i in range(1,num+1):
+    print('*',end='')
+
+
+'''
+*
+**
+***
+****
+*****
+'''
+
+num = int(input('Enter a your number:-'))
+
+for i in range(1,num+1):#i=5
+    for j in range(1,i+1): # (1,6)
+        print('*',end='')
+    print()
+
+'''
+*****
+****
+***
+**
+*
+'''
+
+num = int(input('Enter a your number:-'))
+
+for i in range(1,num+1):
+    for j in range(1,num+2-i):
+        print('*',end='')
+    print()

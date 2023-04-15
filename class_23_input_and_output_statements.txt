@@ -1,0 +1,79 @@
+                              Input and Output Statements
+                              ---------------------------
+
+
+Python2 :-
+---------
+
+Reading dynamic input from keyboard:-
+
+In python2 there are 2 input function are avialabe for to read dynamic input.
+
+1.raw_input()
+2.input()
+
+1.raw_input():-
+
+This function always reads the data from the keyboard in the form of string format, we need convert using Type casting
+
+>>> var = raw_input("Enter a value")
+Enter a value87
+>>> var
+'87'
+>>> type(var)
+<type 'str'>
+>>> var = raw_input("Enter a value:-")
+Enter a value:-[45,89,67,34]
+>>> var
+'[45,89,67,34]'
+>>> type(var)
+<type 'str'>
+>>> var = raw_input("Enter a value:-")
+Enter a value:-67
+>>>
+>>> var
+'67'
+>>> var = int(var)
+>>> var
+67
+>>> type(var)
+<type 'int'>
+>>> var = int(raw_input("Enter a value:-"))
+Enter a value:-56
+>>> var
+56
+>>>
+
+2.input():- 
+input function can be used to read the data directly in our required format.
+
+>>> var = input('Enter a value')
+Enter a value{45,78,90}
+>>> var
+set([90, 45, 78])
+>>> type(var)
+<type 'set'>
+>>>
+
+
+Python3 have only one input() but it's works like python2 raw_input(). we need to type cast.
+
+>>> a = input("Enter a value:-")
+Enter a value:-{89,87,87}
+>>> a
+'{89,87,87}'
+>>> type(a)
+<class 'str'>
+>>>
+
+
+eval():- eval function take a string and evaluate the result.
+
+a = eval(input("Enter a value:-"))
+print(type(a))
+
+
+
+Output:-
+
+use print() for show the variable's data this is the output.

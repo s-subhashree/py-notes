@@ -1,0 +1,40 @@
+
+
+#fromkeys():- Return a dict with a specified key and value, and here value is same
+
+li = ['Kiran','Sonal','Krishna','Javed']
+marks = 80
+
+z = dict.fromkeys(li,marks)
+print(z) # {'Kiran': 80, 'Sonal': 80, 'Krishna': 80, 'Javed': 80}
+
+# setdefault():- Return the value of specofied key, If the key doesnot exits, insert key with
+#specified values
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+di.setdefault('ph_no',9989786686)
+print(di) # {'name': 'mahesh', 'age': 24, 'salary': 500000, 'address': 'mahesh', 'ph_no': 9989786686}
+
+#update :-
+
+di = {'name':'mahesh','age':24,'salary':500000,'address':'mahesh'}
+new_di = {'ph_no': 986775,'hike_salary':250000,'company':'IBM'}
+
+di.update(new_di)
+print(di) # {'name': 'mahesh', 'age': 24, 'salary': 500000, 'address': 'mahesh', 'ph_no': 986775, 'hike_salary': 250000, 'company': 'IBM'}
+
+
+
+
+
+
+
+#None Data type:-
+
+None means nothing or No value associated
+If the value is not available , then to handel such type of cases it's None.
+
+def m1():
+    a = 10
+print(m1())
+
